@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+# List of servers (replace with actual IPs or hostnames)
+servers=("server1.example.com" "server2.example.com" "server3.example.com" ... "server100.example.com")
+
+# Command to execute on each server
+remote_command="uptime"
+
+# Loop through each server and execute the command
+for server in "${servers[@]}"
+do
+    echo "Executing on $server..."
